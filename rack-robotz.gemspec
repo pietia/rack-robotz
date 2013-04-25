@@ -1,11 +1,8 @@
 # -*- encoding: utf-8 -*-
 
-$:.unshift File.expand_path('../lib', __FILE__)
-require 'rack/robotz/version'
-
 Gem::Specification.new do |s|
   s.name          = 'rack-robotz'
-  s.version       = Rack::Robotz::VERSION
+  s.version       = '0.0.2'
   s.summary       = 'Serve a robots.txt file dynamically.'
 
   s.authors        = ['John Labovitz', 'Piotr Gęga']
@@ -20,6 +17,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'gem-release'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'minitest'
+  s.add_development_dependency 'rack-test'
 
   s.files        = Dir.glob('{bin,lib,test}/**/*') + %w(README.textile)
   s.require_path = 'lib'

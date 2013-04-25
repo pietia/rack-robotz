@@ -2,7 +2,9 @@ module Rack
 
   class Robotz
 
-    def initialize(app, items)
+    VERSION = '0.0.2'
+
+    def initialize(app, items = {"User-Agent" => "*", "Disallow" => "/"})
       @app = app
       @items = items
       @is_enabled = %w{1 true yes}.include?(ENV["DISABLE_ROBOTS"])
