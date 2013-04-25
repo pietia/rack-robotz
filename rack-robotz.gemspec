@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 $:.unshift File.expand_path('../lib', __FILE__)
-require 'rack/robotz'
+require 'rack/robotz/version'
 
 Gem::Specification.new do |s|
   s.name          = 'rack-robotz'
