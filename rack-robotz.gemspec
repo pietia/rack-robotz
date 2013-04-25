@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors        = ['John Labovitz', 'Piotr Gęga']
   s.email          = ['johnl@johnlabovitz.com', 'pietia@appgrinder.pl']
   s.description   = %q{
-    Rack application to serve a robots.txt file dynamically.    
+    Rack middleware to serve a robots.txt file dynamically.
   }
   s.homepage      = 'http://github.com/pietia/rack-robotz'
 
