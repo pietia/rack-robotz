@@ -16,8 +16,10 @@ Gem::Specification.new do |s|
   s.homepage      = 'http://github.com/pietia/rack-robotz'
 
   s.add_dependency 'rack'
+
   s.add_development_dependency 'gem-release'
   s.add_development_dependency 'rake'
+  s.add_development_dependency 'minitest'
 
   s.files        = Dir.glob('{bin,lib,test}/**/*') + %w(README.textile)
   s.require_path = 'lib'
