@@ -3,7 +3,9 @@ require 'rack'
 module Rack
 
   class Robotz
-      
+
+    VERSION = '0.0.2'
+
     def initialize(app, items)
       @app = app
       @items = items

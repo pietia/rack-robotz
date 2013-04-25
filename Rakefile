@@ -1,11 +1,10 @@
-task :test do
-  #FIXME
-end
- 
-task :build => :test do
-  system 'gem build rack-robotz.gemspec'
+require 'rake'
+require 'rake/testtask'
+
+Rake::TestTask.new do |t|
+  t.libs << 'lib'
+  t.verbose = false
+  t.test_files = FileList['test/unit/**/*_test.rb', 'test/spec/**/*_spec.rb']
 end
 
-task :release => :build do
-  system "gem push rack-robotz-#{Rack::Robotz::VERSION}"
-end
+task :default => :test
