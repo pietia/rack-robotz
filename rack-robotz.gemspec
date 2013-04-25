@@ -16,7 +16,6 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'gem-release'
   s.add_development_dependency 'rake'
-  s.add_development_dependency 'minitest'
   s.add_development_dependency 'rack-test'
 
   s.files        = Dir.glob('{bin,lib,test}/**/*') + %w(README.textile)
