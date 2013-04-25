@@ -2,7 +2,7 @@ module Rack
 
   class Robotz
 
-    VERSION = '0.0.2'
+    VERSION = '0.0.3'
 
     def initialize(app, items = {"User-Agent" => "*", "Disallow" => "/"})
       @app = app
