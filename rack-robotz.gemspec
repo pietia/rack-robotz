@@ -18,6 +18,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rack-test'
 
-  s.files        = Dir.glob('{bin,lib,test}/**/*') + %w(README.textile)
+  s.files        = Dir.glob('{bin,lib,test}/**/*') + %w(README.md)
   s.require_path = 'lib'
 end
