@@ -8,5 +8,4 @@ Rack middleware to serve a robots.txt file dynamically. Handy in staging envs.
 
 ### How to use it?
 
-* set ENV variable: `DISABLE_ROBOTS=true`
 * add middleware to your application: `use Rack::Robotz, "User-Agent" => "*", "Disallow" => "/"`

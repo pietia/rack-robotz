@@ -2,12 +2,11 @@ module Rack
 
   class Robotz
 
-    VERSION = '0.0.3'
+    VERSION = '0.0.4'
 
     def initialize(app, items = {"User-Agent" => "*", "Disallow" => "/"})
       @app = app
       @items = items
-      @is_enabled = %w{1 true yes}.include?(ENV["DISABLE_ROBOTS"])
     end
 
     def to_s
@@ -15,7 +14,7 @@ module Rack
     end
 
     def call(env)
-      if @is_enabled && env['PATH_INFO'] == '/robots.txt'
+      if env['PATH_INFO'] == '/robots.txt'
         [200, { 'Content-Type' => 'text/plain' }, [to_s]]
       else
         @app.call(env)
