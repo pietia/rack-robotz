@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name          = 'rack-robotz'
-  s.version       = '0.0.3'
+  s.version       = '0.0.4'
   s.summary       = 'Serve a robots.txt file dynamically.'
 
   s.authors        = ['John Labovitz', 'Piotr Gęga']
